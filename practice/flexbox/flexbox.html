@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox exercise</title>
+
+    <style>
+      .flex-container {
+        display: flex;
+        flex-direction: row;
+        border: 2px solid black;
+        height: 80px;
+      }
+      .first-div {
+        width: 200px;
+        background-color: lightblue;
+      }
+      .second-div {
+        width: 75px;
+        background-color: lightpink;
+      }
+
+      .second-container {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+      }
+
+      .left {
+        background-color: lightblue;
+        width: 50px;
+      }
+      .remaining {
+        background-color: lightpink;
+        flex: 1;
+      }
+      .right {
+        background-color: lightblue;
+        width: 75px;
+      }
+
+      .third-container {
+        margin: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .fourth-container {
+        height: 50px;
+        border: 2px solid gray;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="first-div">200px</div>
+      <div class="second-div">200px</div>
+    </div>
+
+    <div class="second-container">
+      <div class="left">item1</div>
+      <div class="remaining">item2</div>
+      <div class="right">item3</div>
+    </div>
+
+    <div class="third-container">
+      <div style="background-color: lightblue">item1</div>
+      <div style="background-color: lightpink">item2</div>
+      <div style="background-color: lightpink">item3</div>
+      <div style="background-color: lightpink">item4</div>
+    </div>
+
+    <div class="fourth-container">
+      <div style="background-color: lightpink">item1</div>
+      <div style="background-color: lightpink">item2</div>
+    </div>
+  </body>
+</html>

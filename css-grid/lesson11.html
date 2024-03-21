@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .first-example{
+            display: grid;
+            grid-template-columns: 200px 75px;
+        }
+        .second-example{
+            margin-top: 20px;
+            height: 150px;
+            display: grid;
+            grid-template-columns: 50px 1fr 75px;
+            column-gap: 8px;
+        }
+
+        .third-example{
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            column-gap: 20px;
+            row-gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="first-example" style="background-color: rgb(232, 158, 158);">
+        <div style="background-color: lightblue;">200px</div>
+        <div style="background-color: lightpink;">75px</div>
+    </div>
+
+    <div class="second-example">
+        <div style="background-color: aqua;">50px</div>
+        <div style="background-color: blueviolet;">1fr</div>
+        <div style="background-color: darkgoldenrod;">75px</div>
+    </div>
+
+    <div class="third-example">
+        <div style="background-color: aqua;">50px</div>
+        <div style="background-color: blueviolet;">1fr</div>
+        <div style="background-color: darkgoldenrod;">75px</div>
+        <div style="background-color: blueviolet;">1fr</div>
+        <div style="background-color: aqua;">50px</div>
+        <div style="background-color: blueviolet;">1fr</div>
+        <div style="background-color: darkgoldenrod;">75px</div>
+        <div style="background-color: blueviolet;">1fr</div>
+    </div>
+
+</body>
+</html>

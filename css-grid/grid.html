@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid example</title>
+    <style>
+      .basic-grid{
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: 200px 1fr 2fr;
+      } 
+      .basic-grid2{
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 10px;
+        row-gap: 30px;
+      } 
+    </style>
+  </head>
+  <body style="padding-bottom:600px ;">
+    <div style="display: grid; grid-template-columns: 200px 200px">
+      <div style="background-color: lightblue">Div 1</div>
+      <div style="background-color: lightpink">
+        Div 2
+       
+      </div>
+    </div>
+
+    <div class="basic-grid">
+        <div style="background-color: lightblue;">200px</div>
+        <div style="background-color: lightgreen;">1fr</div>
+        <div style="background-color: lightsalmon;">2fr</div>
+    </div>
+
+    <!-- <div class="basic-grid2">
+        <div style="background-color: lightblue; height: 200px;">200px</div>
+        <div style="background-color: lightgreen; height: 200px;">1fr</div>
+        <div style="background-color: lightsalmon; height: 200px;">2fr</div>
+        
+    </div> -->
+
+    <div class="basic-grid2">
+        <div style="background-color: lightblue; height: 200px;">1fr</div>
+        <div style="background-color: lightgreen; height: 200px;">1fr</div>
+        <div style="background-color: lightsalmon; height: 200px;">1fr</div>
+        <div style="background-color: lightblue; height: 200px;"></div>
+        <div style="background-color: lightgreen; height: 200px;"></div>
+        <div style="background-color: lightsalmon; height: 200px;"></div>
+    </div>
+  </body>
+</html>
